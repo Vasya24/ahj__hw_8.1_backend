@@ -63,7 +63,7 @@ app.use(async (ctx, next) => {
     event: 'comment',
     data: JSON.stringify({
       type: 'start',
-      message: 'Игра началась',
+      message: 'Ну, понеслась',
       date: initDate()
     }),
     id: uuid.v4()
@@ -73,15 +73,15 @@ app.use(async (ctx, next) => {
     const events = [
       {
         type: 'action',
-        message: 'Идёт перемещение мяча по полю, игроки и той, и другой команды активно пытаются атаковать'
+        message: 'Ну играют и играют'
       },
       {
         type: 'freekick',
-        message: 'Нарушение правил, будет штрафной удар'
+        message: 'Ну нарушил и нарушил'
       },
       {
         type: 'goal',
-        message: 'Отличный удар! И Г-О-О-О-Л!'
+        message: 'Ну гол и гол'
       }
     ];
 
